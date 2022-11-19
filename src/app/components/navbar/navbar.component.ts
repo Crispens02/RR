@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DatosService } from 'src/app/services/datos.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,14 +6,12 @@ import { DatosService } from 'src/app/services/datos.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-Navbar :any;
-  constructor(private datos:DatosService) { }
+  public active : boolean = false 
+  constructor() { }
 
   ngOnInit(): void {
-    this.datos.obtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.datos=data;
-    });
   }
-
+  setActive() : void {
+    this.active = !this.active
+  }
 }
