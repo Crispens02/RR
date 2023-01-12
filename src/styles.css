@@ -13,10 +13,10 @@ body {
  }
  
  @font-face {
-    font-family: Minimal;
-    src: url("src\assets\fonts\minimal.otf");
- }
- 
+   font-family: Minimal;
+   src: url("src\assets\Fonts\minimal.otf");
+}
+
  
  header{
     width: 100%;
